@@ -1,7 +1,10 @@
 #include<iostream>
 using namespace std;
 int main(){
-    int sz = 5;
+    int sz;
+    cout<<"Enter size of array : ";
+    cin>>sz;
+    
     int arr[sz];
 
     cout<<"Enter array elements : "<<endl;
