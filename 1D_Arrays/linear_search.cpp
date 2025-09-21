@@ -1,29 +1,22 @@
 #include<iostream>
 #include<vector>
 using namespace std;
-
-char linear_search(vector<int>& nums, int target){
-bool found = false;
+void Search(vector<int> &nums, int target){
+    bool found = false;
     for(int value : nums){
-        if(value == target){
+        if(target == value){
             found = true;
-             target=value;
-            cout<<target<<" is available";
-            break;
-        }  
-        
-
-        else if(found){
-            cout<<target<<" is not available";
-            break;
-         } 
-        
+        }
     }
-    
-   
+    if(found == true){
+        cout<<target<<" is available"<<endl;
+    }
+    else{
+        cout<<target<<" is not available"<<endl;
+    }
 }
 int main(){
     vector<int>nums = {1,3,5,8,3,8};
     int target = 9;
-    linear_search(nums,target);
+    Search(nums,target);
 }
