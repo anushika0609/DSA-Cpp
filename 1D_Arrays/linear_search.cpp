@@ -14,7 +14,7 @@ bool found = false;
         
 
         else if(found){
-            cout<<" not available";
+            cout<<target<<" is not available";
             break;
          } 
         
